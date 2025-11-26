@@ -1,0 +1,13 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Tomorrow", sans-serif;
+}
+
+.app_background {
+  background-color: white;
+  margin: 100px auto;
+  max-width: 500px;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba (65, 50, 100, 0.08);
+}
