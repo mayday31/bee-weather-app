@@ -3,16 +3,24 @@ body {
   font-family: "Tomorrow", sans-serif;
 }
 
-.app_background {
+a {
+  color: #9d5087;
+}
+
+.app-background {
   background-color: #ff8989;
   margin: 100px auto;
-  max-width: 500px;
+  max-width: 575px;
   border-radius: 18px;
   padding: 30px;
   box-shadow: 0 30px 50px rgba (65, 50, 100, 0.08);
 }
 
-.search_input {
+header {
+  padding: 0 0 30px 0;
+}
+
+.search-input {
   background-color: #f9f7fe;
   border: none;
   border-radius: 5px;
@@ -21,10 +29,37 @@ body {
   font-size: 15px;
 }
 
-.form_submit {
+.form-submit {
   background-color: #c2f8ed;
   border: none;
   border-radius: 5px;
   padding: 15px 24px;
   font-size: 15px;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.heading {
+  margin: 0;
+  font-size: 29px;
+  line-height: 20px;
+}
+
+.weather-details {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.weather-temperature {
+}
+
+footer {
+  padding: 30px 0 0 0;
+  font-size: 12px;
+  text-align: center;
+  color: #c2f8ed;
 }

@@ -13,28 +13,30 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="app_background">
+    <div class="app-background">
       <header>
         <form>
           <input
             type="search"
             placeholder="Please enter a city"
             required
-            class="search_input"
+            class="search-input"
           />
-          <input type="submit" value="Search" class="form_submit" />
+          <input type="submit" value="Search" class="form-submit" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>City Name (placeholder)</h1>
-          <p>
-            Weekday Time, sunny
-            <br />
-            Humidity: %, Wind: mph
-          </p>
+        <div class="weather-data">
+          <div>
+            <h1 class="heading">City Name (placeholder)</h1>
+            <p class="weather-details">
+              Weekday Time, sunny
+              <br />
+              Humidity: <strong>%</strong>, Wind: <strong>mph</strong>
+            </p>
+          </div>
+          <div class="weather-temperature">🌤️ 70°F</div>
         </div>
-        <div>🌤️ 70°F</div>
       </main>
       <footer>
         This project was coded by
