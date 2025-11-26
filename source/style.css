@@ -1,13 +1,30 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #f0e195;
   font-family: "Tomorrow", sans-serif;
 }
 
 .app_background {
-  background-color: white;
+  background-color: #ff8989;
   margin: 100px auto;
   max-width: 500px;
   border-radius: 18px;
   padding: 30px;
   box-shadow: 0 30px 50px rgba (65, 50, 100, 0.08);
+}
+
+.search_input {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.form_submit {
+  background-color: #c2f8ed;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 24px;
+  font-size: 15px;
 }
