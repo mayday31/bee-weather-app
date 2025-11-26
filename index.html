@@ -15,20 +15,25 @@
   <body>
     <div class="app-background">
       <header>
-        <form>
+        <form id="form">
           <input
             type="search"
             placeholder="Please enter a city"
             required
             class="search-input"
+            id="search-input"
           />
-          <input type="submit" value="Search" class="form-submit" />
+          <input 
+          type="submit" 
+          value="Search" 
+          class="submit-form" 
+          id="submit-form" />
         </form>
       </header>
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="heading">City Name (placeholder)</h1>
+            <h1 class="heading" id="current-city">City Name (placeholder)</h1>
             <p class="weather-details">
               Weekday Time, sunny
               <br />
@@ -54,5 +59,6 @@
         >.
       </footer>
     </div>
+    <script src="source/script.js"></script>
   </body>
 </html>
