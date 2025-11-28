@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="source/style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -33,7 +34,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="heading" id="current-city">City Name (placeholder)</h1>
+            <h1 class="heading" id="current-city"></h1>
             <p class="weather-details">
               Weekday Time, sunny
               <br />
@@ -42,7 +43,7 @@
           </div>
           <div class="current-temperature"> 
             <span class="current-temperature-icon">🌤️</span
-            ><span class="current-temperature-value">70</span
+            ><span class="current-temperature-value" id="current-temp-value">0</span
             ><span class="current-temperature-unit">°F</span>
         </div>
       </main>
