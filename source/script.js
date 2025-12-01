@@ -13,6 +13,8 @@ function pullWeatherData(response) {
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   wind.innerHTML = `${response.data.wind.speed}mph`;
   emoji.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon">`;
+
+  pullForecastData(response.data.city);
 }
 
 function searchCity(city) {
@@ -53,7 +55,14 @@ currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 let searchForm = document.querySelector("#form");
 searchForm.addEventListener("submit", searchSubmit);
 
-function displayForecast() {
+function pullForecastData(city) {
+  let apiKey = "86d11b15bf79a84309ce4be6o80tad43";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let days = ["Mon", "Tue", "Wed", "Thurs", "Fri"];
   let forecastHtml = "";
 
@@ -77,4 +86,3 @@ function displayForecast() {
 }
 
 searchCity("Lorton");
-displayForecast();
