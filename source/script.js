@@ -53,4 +53,28 @@ currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 let searchForm = document.querySelector("#form");
 searchForm.addEventListener("submit", searchSubmit);
 
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thurs", "Fri"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      ` 
+      <div class="forecast-info">
+            <div class="forecast-day">${day}</div>
+            <div class="forecast-emoji">☀️</div>
+            <div class="forecast-temperatures">
+              <div class="forecast-temp"><strong>44°</strong></div>
+              <div class="forecast-temp">20°</div>
+            </div>
+       </div>
+       `;
+  });
+
+  let forecastData = document.querySelector("#forecast");
+  forecastData.innerHTML = forecastHtml;
+}
+
 searchCity("Lorton");
+displayForecast();
