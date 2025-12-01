@@ -5,12 +5,14 @@ function pullWeatherData(response) {
   let condition = document.querySelector("#weather-condition");
   let humidity = document.querySelector("#humidity");
   let wind = document.querySelector("#wind");
+  let emoji = document.querySelector("#emoji");
 
   tempHeader.innerHTML = temperature;
   currentCity.innerHTML = response.data.city;
   condition.innerHTML = response.data.condition.description;
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   wind.innerHTML = `${response.data.wind.speed}mph`;
+  emoji.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon">`;
 }
 
 function searchCity(city) {
@@ -50,3 +52,5 @@ currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 
 let searchForm = document.querySelector("#form");
 searchForm.addEventListener("submit", searchSubmit);
+
+searchCity("Lorton");

@@ -58,11 +58,19 @@ header {
   color: #793a77;
 }
 
+.current-weather-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.current-temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .current-temperature-icon {
-  position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
 }
 
 .current-temperature-value {
@@ -72,8 +80,6 @@ header {
 
 .current-temperature-unit {
   font-size: 28px;
-  position: relative;
-  top: -28px;
 }
 
 footer {
