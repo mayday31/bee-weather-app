@@ -82,6 +82,37 @@ header {
   font-size: 28px;
 }
 
+.forecast {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-day {
+  text-align: center;
+  color: #fbee69;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.forecast-emoji {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+.forecast-temperatures {
+  display: flex;
+  text-align: center;
+  color: #f0e195;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.forecast-temp {
+  padding: 0 8px;
+}
+
 footer {
   padding: 30px 0 0 0;
   font-size: 12px;
